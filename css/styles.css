@@ -1,0 +1,187 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#video-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    height: 250px;
+}
+
+.banner-text h1 {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: bolder;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    border-color: black;
+
+}
+
+.banner-text p {
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    border-color: black;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 28px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 6px;
+
+}
+
+.navbar-items li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-items li a {
+    color: darkgray;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.title h1 {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
+    text-align: center;
+    text-shadow: #000000;
+    background-color: beige;
+    padding: 20px 0px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.event-form {
+    background-color: rgba(238, 90, 5, 0.699);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 100px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 780px;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.425);
+    gap: 50px;
+    border-bottom: #807f7f;
+    margin:0 auto;
+}
+
+label {
+    font-size: 20px;
+}
+
+input:not([type=checkbox]) {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    width: 100%;
+    background-color: rgba(240, 164, 121, 0.699);
+}
+
+span {
+    font-size: 15px;
+}
+
+.checkbox {
+border-radius: 50%;
+height: 20px;
+}
+
+.checkbox input[type="checkbox"]{
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #f1efef;
+    border: 0.1px solid #000;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #e7d10d;
+    border-color:#000;
+    animation: blink 0.3s ease;
+   
+}
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: #48e00c;
+        /* Cor final após a animação */
+    }
+
+    50% {
+        background-color:#e7d10d;
+        /* Cor intermediária durante a piscada */
+    }
+}
+
