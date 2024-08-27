@@ -105,29 +105,13 @@
     color: #dad6d6;
 }
 
-.content-wrapper {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: flex-start;
-    gap: 20px;
+.schedule h2 {
+    color: #000;
+    text-align: center;
+    padding: 8px;
 }
 
-.about-banner {
-    background-image: url("../img/sobre-o-evento.png");
-    height: 200px;
-    width: 60%;
-    background-position: left;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-color: #000;
-}
 
-.schedule {
-    width: 35%;
-}
 
 .workshop-schedules {
     background-color: #ffffff9d;
@@ -138,6 +122,25 @@
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.content-wrapper {
+    width: 50%;
+}
+
+.schedule {
+    width: 50%;
+}
+
+.content-wrapper img {
+    width: 100%;
 }
 
 /* AQUI COMEÇA SOBRE O CADASTRO */
@@ -183,7 +186,7 @@ fieldset {
     border-bottom: #807f7f;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+
 }
 
 .form {
@@ -270,13 +273,13 @@ span {
     border-radius: 10px;
     gap: 50px;
     margin-top: 30px;
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 30px;
+
 }
 
 /* CONTATO */
 
-#contact{
+#contact {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -285,13 +288,13 @@ span {
     padding: 20px 0px;
 }
 
-#contact h1{
+#contact h1 {
     color: rgb(0, 0, 0);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
-        padding: 10px;
-        font-size: 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
+    padding: 10px;
+    font-size: 40px;
 }
 
-#contact p{
+#contact p {
     font-size: 25px;
 }
