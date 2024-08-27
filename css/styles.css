@@ -64,7 +64,6 @@
     font-size: 28px;
     background-color: black;
     padding: 5px 10px;
-    border-radius: 6px;
 
 }
 
@@ -80,14 +79,15 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 2px 20px;
+    padding: 0px 20px;
     text-align: center;
     height: 100%;
     width: 100%;
 
 }
 
-.title h1 {
+/* SOBRE O EVENTO */
+.about-us-title h1 {
     color: rgb(0, 0, 0);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
     text-align: center;
@@ -97,12 +97,66 @@
     font-size: 40px;
 }
 
-.title p{
+.about-us-title p {
     display: flex;
     justify-content: center;
     font-size: 25px;
     margin-top: 50px;
-    color: #c0bdbd;
+    color: #dad6d6;
+}
+
+.content-wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-banner {
+    background-image: url("../img/sobre-o-evento.png");
+    height: 200px;
+    width: 60%;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.schedule {
+    width: 35%;
+}
+
+.workshop-schedules {
+    background-color: #ffffff9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 6px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* AQUI COMEÇA SOBRE O CADASTRO */
+.register-title h1 {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
+    text-align: center;
+    text-shadow: #000000;
+    background-color: beige;
+    padding: 20px 0px;
+    font-size: 40px;
+}
+
+.register-title p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #dad6d6;
 }
 
 fieldset {
@@ -115,7 +169,7 @@ fieldset {
 }
 
 .event-form {
-    background-color: rgba(238, 90, 5, 0.699);
+    background-color: #999999;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -127,42 +181,50 @@ fieldset {
     height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.425);
     border-bottom: #807f7f;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-label {
-    
+.form {
+    padding: 10px;
     font-size: 25px;
-   width: 100%;
-
+    width: 100%;
 }
 
 input:not([type=checkbox]) {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #00000021;
     display: flex;
     width: 100%;
-    background-color: rgba(240, 164, 121, 0.699);
+    background-color: #c0c0c0;
 }
 
-#event-workshop{
-    background-color: rgba(240, 164, 121, 0.699);
+#event-workshop {
+
     font-size: 20px;
 }
 
-span {
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
     font-size: 15px;
+    padding: 6px 0px;
 }
 
-.checkbox {
-border-radius: 50%;
-height: 20px;
+
+span {
+    font-size: 16px;
 }
 
-.checkbox input[type="checkbox"]{
+.newsletter-checkbox {
+    border-radius: 50%;
+    height: 20px;
+}
+
+#newsletter-checkbox input[type="checkbox"] {
     border-radius: 50%;
     height: 13px;
     width: 13px;
@@ -174,12 +236,19 @@ height: 20px;
     position: relative;
 }
 
-.checkbox input[type="checkbox"]:checked {
-    background-color: #000000;
-    border-color:#000;
-    animation: blink 0.3s ease;
-   
+#newsletter-checkbox {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
 }
+
+#newsletter-checkbox input[type="checkbox"]:checked {
+    background-color: #000000;
+    border-color: #000;
+    animation: blink 0.3s ease;
+
+}
+
 @keyframes blink {
 
     0%,
@@ -189,19 +258,40 @@ height: 20px;
     }
 
     50% {
-        background-color:rgba(238, 90, 5, 0.699);
+        background-color: rgba(238, 90, 5, 0.699);
         /* Cor intermediária durante a piscada */
     }
 }
 
-.button{
-    color:#e7e3e3;
+.button {
+    color: #e7e3e3;
     background-color: #000;
     width: 100%;
     border-radius: 10px;
     gap: 50px;
     margin-top: 30px;
     font-size: 20px;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
+/* CONTATO */
+
+#contact{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+}
+
+#contact h1{
+    color: rgb(0, 0, 0);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.164);
+        padding: 10px;
+        font-size: 40px;
+}
+
+#contact p{
+    font-size: 25px;
+}
